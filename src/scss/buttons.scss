@@ -1,0 +1,33 @@
+@use '@ucd-lib/theme-sass/2_base_class/_buttons-mixin.scss' as *;
+
+.forminator-button {
+  @include btn();
+}
+.forminator-button-next {
+  @include btn--primary();
+}
+.forminator-button-back {
+  @include btn--primary();
+}
+.forminator-button-submit {
+  @include btn--primary();
+}
+.forminator-pagination-footer {
+  margin-top: 1rem;
+  display: flex;
+}
+.forminator-pagination-steps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.forminator-step {
+  @include btn--sm();
+  @include btn--alt3();
+  margin: .25rem .25rem;
+
+  &.forminator-current {
+    @include btn--disabled();
+  }
+}

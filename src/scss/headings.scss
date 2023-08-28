@@ -1,0 +1,33 @@
+@use '@ucd-lib/theme-sass/0_tools/_headings-mixin.scss' as *;
+
+.forminator-title {
+  @include heading-default();
+  @include heading--secondary();
+}
+.heading--primary .forminator-title {
+  @include heading--primary();
+}
+.heading--secondary .forminator-title {
+  @include heading--secondary();
+}
+.heading--highlight .forminator-title {
+  @include heading--highlight();
+}
+.heading--auxiliary .forminator-title {
+  @include heading--auxiliary();
+}
+.heading--weighted .forminator-title {
+  @include heading--weighted();
+}
+.heading--underline .forminator-title {
+  @include heading--underline();
+}
+.heading--weighted-underline .forminator-title {
+  @include heading--weighted-underline();
+}
+.heading--invert .forminator-title {
+  @include heading--invert();
+}
+.heading--invert-box .forminator-title {
+  @include heading--invert-box();
+}

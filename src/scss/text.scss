@@ -1,0 +1,36 @@
+// For labels, descriptions, error messages, etc
+.forminator-error-message {
+  color: #c10230;
+  display: block;
+}
+.forminator-response-message.forminator-error {
+  color: #c10230;
+}
+.radio, .checkbox {
+  &> .forminator-label {
+   display: block;
+   padding-bottom: 0.25rem;
+   color: #022851;
+   font-weight: 700;
+   font-size: 1rem;
+   line-height: 1.618;
+   margin-bottom: 0;
+  }
+
+  .forminator-description {
+    display: block;
+    margin-bottom: .5rem;
+  }
+}
+ input,select {
+  &+ .forminator-description {
+    margin-top: .5rem;
+    display: block;
+  }
+}
+.forminator-description span[data-limit] {
+  padding-left: .5rem;
+}
+.forminator-input-with-icon > label {
+  display: none;
+}
