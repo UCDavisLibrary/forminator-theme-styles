@@ -27,4 +27,4 @@ class UcdlibForminatorStylesImp extends UcdlibForminatorStyles {
 
 }
 
-new UcdlibForminatorStylesPlugin();
+new UcdlibForminatorStylesImp();
