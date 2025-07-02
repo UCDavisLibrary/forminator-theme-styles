@@ -7,7 +7,7 @@
 class UcdlibForminatorStyles {
   public function __construct(){
     add_filter('forminator_field_markup', [$this, 'styleRadioAndCheck'], 10, 3);
-    add_filter('forminator_field_markup', [$this, 'styleConsentBox'], 10, 3);
+    // add_filter('forminator_field_markup', [$this, 'styleConsentBox'], 10, 3);
     add_filter('forminator_render_button_markup', [$this, 'styleSubmitButton'], 10, 2);
     add_action( 'admin_init', [$this, 'forceNoStyling']);
     add_action( 'admin_footer', [$this, 'removeStyleOptions']);
